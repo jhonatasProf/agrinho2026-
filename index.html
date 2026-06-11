@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p class="subtitle">Encontre o equilíbrio entre produção e meio ambiente</p>
+        </header>
+
+        <section class="status-container">
+            <div class="status-bar">
+                <span class="label">🌾 Produção Econômica: <span id="val-prod">50</span>%</span>
+                <div class="progress-bg">
+                    <div id="bar-prod" class="progress-fill prod-color" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="status-bar">
+                <span class="label">🌱 Sustentabilidade Ambiental: <span id="val-sust">50</span>%</span>
+                <div class="progress-bg">
+                    <div id="bar-sust" class="progress-fill sust-color" style="width: 50%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <main class="game-card" id="game-card">
+            <h2 id="pergunta-texto">Carregando dilema...</h2>
+            
+            <div class="options-container">
+                <button class="btn-option" onclick="fazerEscolha('A')" id="btn-a">Opção A</button>
+                <button class="btn-option" onclick="fazerEscolha('B')" id="btn-b">Opção B</button>
+            </div>
+        </main>
+
+        <section class="game-card hidden" id="screen-end">
+            <h2 id="end-title">Fim da Jornada!</h2>
+            <p id="end-text">Resultado da sua gestão...</p>
+            <button class="btn-restart" onclick="reiniciarJogo()">Jogar Novamente</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
