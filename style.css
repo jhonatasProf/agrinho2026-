@@ -1,0 +1,142 @@
+/* Configurações Gerais e Cores */
+:root {
+    --bg-color: #121814;
+    --card-bg: #1e2621;
+    --text-color: #e2e8f0;
+    --prod-color: #f59e0b; /* Laranja/Amarelo Grão */
+    --sust-color: #10b981; /* Verde Sustentável */
+    --btn-hover: #34d399;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--sust-color);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* Barras de Progresso */
+.status-container {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.status-bar {
+    margin-bottom: 15px;
+}
+
+.status-bar:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.progress-bg {
+    background: #0f1411;
+    border-radius: 20px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 50%;
+    transition: width 0.5s ease-in-out; /* Deixa o movimento da barra suave */
+}
+
+.prod-color { background-color: var(--prod-color); }
+.sust-color { background-color: var(--sust-color); }
+
+/* Cartão do Jogo */
+.game-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.game-card h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botões */
+.btn-option {
+    background: #2a352e;
+    color: var(--text-color);
+    border: 2px solid #3d4f45;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.btn-option:hover {
+    background: var(--sust-color);
+    color: #000;
+    border-color: var(--sust-color);
+    transform: translateY(-2px);
+}
+
+.btn-restart {
+    background: var(--prod-color);
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Classes Utilitárias */
+.hidden {
+    display: none;
+}
